@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  /* ============ PRIMARY COLOURS ============ */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook-color: hsl(208, 92%, 53%);
+  --twitter-color: hsl(203, 89%, 53%);
+  --youtube-color: hsl(348, 97%, 39%);
+  --instagram-color: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+
+  /* ============ FONT ============ */
+  --font-family: "Inter", sans-serif;
+  --font-700: 700;
+
+  /* ============ CARD STATISTICS ============ */
+  --font-statistics-card-heading: 14px;
+  --font-statistics-card-title: 50px;
+  --font-statistics-card-subtitle: 14px;
+  --font-statistics-card-footer: 10px;
+
+  /* ============ CARD OVERVIEW ============ */
+  --font-overview-card-heading: 14px;
+  --font-overview-card-body: 25px;
+  --font-overview-card-span: 10px;
+
+  /* ============ HEADING 1 ============ */
+  --font-heading-1: 23px;
+  --sub-heading: 14px;
+  --sub-heading-2: 12px;
+}
+
+.theme-dark {
+  /* ============ TOGGLE COLOUR ============ */
+  --toggle-bg-color: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+
+  /* ============ NEUTRAL COLOURS ============ */
+  --bg-color: hsl(230, 17%, 14%);
+  --bg-pattern-color: hsl(232, 19%, 15%);
+  --card-bg-color: hsl(228, 28%, 20%);
+  --text-blue: hsl(228, 34%, 66%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+.theme-light {
+  /* ============ TOGGLE COLOUR ============ */
+  --toggle-bg-color: hsl(230, 22%, 74%);
+
+  /* ============ NEUTRAL COLOURS ============ */
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-pattern-color: hsl(225, 100%, 98%);
+  --card-bg-color: hsl(227, 47%, 96%);
+  --text-blue: hsl(228, 12%, 44%);
+  --text-color: hsl(230, 17%, 14%);
+}
+
+html{
+  background-color: var(--bg-color);
+}
+body{
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.max-width-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-heading {
+  font-size: var(--font-heading-1);
+  font-weight: var(--font-700);
+  color: var(--text-color);
+}
+
+.sub-heading {
+  font-weight: var(--font-700);
+  font-size: var(--sub-heading-2);
+  color: var(--text-blue);
+  /* display: block; */
+}
+
+.toggle-button {
+  font-size: var(--sub-heading-2);
+  font-weight: var(--font-700);
+  color: var(--text-color);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-bg-color);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.stat-card .card-heading {
+  color: var(--text-blue);
+  font-weight: var(--font-700);
+  font-size: var(--sub-heading-2);
+}

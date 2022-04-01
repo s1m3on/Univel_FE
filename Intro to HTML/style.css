@@ -1,0 +1,25 @@
+p {
+    color: blue;
+}
+
+.greeting {
+    color:brown;
+}
+
+#welcome-note {
+    color: darkgreen;
+}
+
+.title {
+    color: rgb(18, 65, 18);
+    /* border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(3, 99, 75);
+    border-width: 2px;
+    background-color: rgb(24, 61, 61); */
+
+}
+
+/* .edges {
+    margin:  0 5% 0 5%;
+} */

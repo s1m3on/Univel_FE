@@ -1,0 +1,169 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0 5rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(42 52 77);
+}
+
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items li {
+  margin-right: 3rem;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-items li a {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.nav-items li a:hover {
+  border: solid 2px #fff;
+  border-radius: 25px;
+}
+
+/* .nav-items li:not(:last-child) {
+  margin-right: 4rem;
+} */
+
+.nav-items li:last-child {
+  margin-right: 0;
+}
+
+.menu-btn,
+.mobile-menu-btn {
+  background: none;
+  border: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+main {
+  min-height: calc(100vh - 101.6px);
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 50%;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: -1rem;
+}
+
+.title span {
+  font-size: 28px;
+  font-weight: lighter;
+  display: block;
+  text-transform: uppercase;
+}
+
+.wrapper p {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 3rem;
+}
+
+.btn-get-started {
+  padding: 1rem 2.5rem;
+  background: none;
+  border: solid 2px #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .wrapper p {
+    text-align: justify;
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .nav-items li {
+    margin-right: 1rem;
+  }
+
+  main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .wrapper {
+    width: 80%;
+  }
+}

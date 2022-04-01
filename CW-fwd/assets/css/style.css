@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto+Slab:wght@200;300&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Marcellus', serif;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+}
+
+header {
+    padding: 1rem 2rem;    
+    background: #103353;
+    box-shadow: 0 0 10px 0 rgba(0 0 0 / 10%);   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-size: 1.3rem;
+}
+
+.logo img {
+    padding: 0 .3rem  0;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+/* .logo, 
+.nav-wrapper {
+    display: inline-block;
+} */
+
+.nav-wrapper {
+    list-style: none;
+    display: flex;
+    
+    /* font-size: 1rem; */
+}
+
+.nav-wrapper li {
+    /* padding: 1rem 1rem; */
+    margin: 0 1rem;
+}
+
+.nav-wrapper li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-wrapper li a:hover {
+    color:orangered;
+}
+
+.lorem {
+    margin: 1.5rem 2rem;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    /* border-color: rgb(95, 96, 97);
+    border-width: 1px;
+    border-style: solid; */
+    border-radius: 10px;
+    width: 20%;
+    height: 210px;
+    /* padding: 1rem; */
+    margin: .5rem;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; 
+}
+
+.container p {
+    text-align: center;
+    font-size: .8em;
+    margin: .5rem 0 0 0;
+}
+
+.container a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.container a:hover {
+    box-shadow: 0 0 10px 0 rgba(0 0 0 / 10%);
+}

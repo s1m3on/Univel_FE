@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:  #2A344D;
+    color: white;
+    margin: 0;
+    padding: 0 6rem;
+}
+
+.logo {
+    /* font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo img {
+    /* padding-right: 5px; */
+    width: 22px;
+    height: auto;
+}
+
+header {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items li {
+    margin-right: 1.5rem;
+    font-size: 13px;
+}
+
+.nav-items li:last-child {
+    margin-right: 0;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.ham-menu {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.ham-menu img {
+    width: 16px;
+    height:auto;
+}
+
+main {
+    /* min-height: calc(100vh - 100px); */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.wrapper {
+    width: 50%;
+}
+
+.title {
+    font-size: 6rem;
+    margin: 0 0 3rem 0;
+}
+
+.title span {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+}
+
+.wrapper p {
+    font-size: 12px;
+    line-height: 1.8rem;
+    margin: 0 0 3rem 0;
+}
+
+.cta-btn {
+    background: none;
+    border: 1.9px solid #ffffff;
+    width: 10rem;
+    border-radius: 25px;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.worshiper img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .nav-items  {
+        display: none;
+    }
+
+    main {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .wrapper p {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+}
